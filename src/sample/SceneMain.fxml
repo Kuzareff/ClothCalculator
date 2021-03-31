@@ -62,7 +62,7 @@
                 <Image url="@../images/hat.png" />
             </image>
         </ImageView>
-        <Text fx:id="m5" fill="WHITE" layoutX="443.0" layoutY="519.0" stroke="#fcf8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Полученные результаты указаны приблезительно, но в соответсвии среднестатистическим показателям.     " textAlignment="CENTER" wrappingWidth="729.0">
+        <Text fx:id="m5" fill="WHITE" layoutX="443.0" layoutY="519.0" stroke="#fcf8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Полученные результаты указаны приблизительно, но в соответствии среднестатистическим показателям.     " textAlignment="CENTER" wrappingWidth="729.0">
             <font>
                 <Font size="24.0" />
             </font>
@@ -76,7 +76,7 @@
          <font>
             <Font size="24.0" />
          </font></Text>
-      <Text fx:id="m3" fill="WHITE" layoutX="443.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Выберете категорию одежды которую необходимо подобрать." textAlignment="CENTER" wrappingWidth="729.0">
+      <Text fx:id="m3" fill="WHITE" layoutX="443.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Выберете категорию одежды, которую необходимо подобрать." textAlignment="CENTER" wrappingWidth="729.0">
          <font>
             <Font size="24.0" />
          </font></Text>
