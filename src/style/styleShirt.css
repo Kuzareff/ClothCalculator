@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'GUERRILLA Normal';
+    src: url("/font/Guerrilla.ttf");
+}
+
+#cc{
+    -fx-font-family: 'GUERRILLA Normal';
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMain">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/back.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="145.0" fitWidth="1280.0" layoutX="71.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/topline.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="47.0" fitWidth="1280.0" layoutY="673.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/downline.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="730.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/left.jpg" />
+            </image>
+            <effect>
+                <DropShadow height="32.86" radius="14.4475" spread="0.24" width="26.93">
+                    <color>
+                        <Color red="0.43421053886413574" green="0.43421053886413574" blue="0.43421053886413574" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="330.0" fitWidth="178.0" layoutX="71.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/menu.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="shoe" fitHeight="56.0" fitWidth="57.0" layoutX="131.0" layoutY="429.0" onMouseClicked="#doShoe" onMouseEntered="#inMeS" onMouseExited="#outMeS" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/shoes.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="dress" fitHeight="87.0" fitWidth="103.0" layoutX="108.0" layoutY="317.0" onMouseClicked="#doDress" onMouseEntered="#inMeD" onMouseExited="#outMeD" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/shirt.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="bwc" fill="WHITE" layoutX="470.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baby-wear calculator">
+            <font>
+                <Font name="Kranky" size="72.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="hat" fitHeight="45.0" fitWidth="46.0" layoutX="137.0" layoutY="255.0" onMouseClicked="#doHat" onMouseEntered="#inMeH" onMouseExited="#outMeH" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/hat.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="m5" fill="WHITE" layoutX="443.0" layoutY="519.0" stroke="#fcf8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Полученные результаты указаны приблезительно, но в соответсвии среднестатистическим показателям.     " textAlignment="CENTER" wrappingWidth="729.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+      <Text fx:id="m1" fill="WHITE" layoutX="588.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Уважаемый пользователь!" wrappingWidth="438.9999999999998">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="m2" fill="WHITE" layoutX="443.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Данная программа поможет молодым родителям подобрать оптимальный размер одежды для ребенка!" textAlignment="CENTER" wrappingWidth="729.0">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Text fx:id="m3" fill="WHITE" layoutX="443.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Выберете категорию одежды которую необходимо подобрать." textAlignment="CENTER" wrappingWidth="729.0">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Text fx:id="m4" fill="WHITE" layoutX="443.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. В каждом разделе необходимо указывать свои параметры." textAlignment="CENTER" wrappingWidth="729.0">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+    </children>
+</AnchorPane>

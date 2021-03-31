@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="background" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerHat">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/back.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="145.0" fitWidth="1280.0" layoutX="71.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/topline.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="47.0" fitWidth="1280.0" layoutY="673.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/downline.png" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="27.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="730.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/left.jpg" />
+            </image>
+            <effect>
+                <DropShadow height="32.86" radius="14.4475" spread="0.24" width="26.93">
+                    <color>
+                        <Color red="0.43421053886413574" green="0.43421053886413574" blue="0.43421053886413574" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="330.0" fitWidth="178.0" layoutX="71.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/menu.png" />
+            </image>
+        </ImageView>
+        <ImageView id="shoe" fx:id="shoe" fitHeight="56.0" fitWidth="57.0" layoutX="131.0" layoutY="429.0" onMouseClicked="#doShoe" onMouseEntered="#inMeS" onMouseExited="#outMeS" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/shoes.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="dress" fitHeight="87.0" fitWidth="103.0" layoutX="108.0" layoutY="317.0" onMouseClicked="#doDress" onMouseEntered="#inMeD" onMouseExited="#outMeD" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/shirt.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="intext" layoutX="650.0" layoutY="457.0" prefHeight="70.0" prefWidth="274.0" promptText="Окружность головы..." style="-fx-background-color: #89ADA7;" AnchorPane.leftAnchor="650.0" AnchorPane.rightAnchor="356.0">
+            <font>
+                <Font name="GUERRILLA Normal" size="22.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <effect>
+            </effect></TextField>
+        <Text fx:id="hc" fill="WHITE" layoutX="470.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Headgear calculator">
+            <font>
+                <Font name="Kranky" size="72.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="usf" fitHeight="40.0" fitWidth="75.0" layoutX="452.0" layoutY="300.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/usa.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="hat" fitHeight="45.0" fitWidth="46.0" layoutX="137.0" layoutY="255.0" onMouseClicked="#doHat" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/hat.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="btn" layoutX="670.0" layoutY="547.0" mnemonicParsing="false" onAction="#handle" prefHeight="66.0" prefWidth="234.0" style="-fx-background-color: #89ADA7;" text="Узнать результат" textFill="WHITE" AnchorPane.leftAnchor="670.0" AnchorPane.rightAnchor="376.0">
+            <effect>
+                <DropShadow height="8.9" radius="4.6899999999999995" width="11.86" />
+            </effect>
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Text fx:id="ust" fill="WHITE" layoutX="557.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <Text fx:id="year" fill="WHITE" layoutX="452.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
